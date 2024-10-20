@@ -31,6 +31,9 @@ $(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PROD
 endif
 DEVICE_PACKAGE_OVERLAYS += device/google/muskie/walleye/overlay
 
+#Include GAPPS configuration
+TARGET_USES_MINI_GAPPS := true
+
 include device/google/muskie/device-common.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
